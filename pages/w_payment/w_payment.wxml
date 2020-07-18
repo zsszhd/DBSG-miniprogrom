@@ -1,0 +1,146 @@
+<!--pages/payment/payment.wxml-->
+<view class='page'>
+    <!-- <button type='primary' bindtap='payment'>支付测试</button>
+    <view > 车牌为{{title}} </view>   -->
+
+    <!--背景图  -->
+    <view class='pay-bg'>
+
+      <!-- 车辆详情 -->
+      <view class='car_info'>
+        <!-- 停车区域 -->
+        <text class='car-info-area'>日照停车场A2区域</text>
+        <!-- 车牌号和照片 -->
+        <view class='car-info-np'>
+          <text class='car-info-number'>{{title}}</text>
+          <text class='car-info-photos' bindtap='photo'>查看照片</text>
+        </view>
+        <!-- 入场时间和停车时长 -->
+        <view class='car-info-rs'>
+          <view class='car-info-ruchangtime'>入场时间：
+            <text class='car-info-ruchangdate'>2018-07-01</text>
+            <text>09:10:18</text>
+          </view>
+          <view class='car-info-stoptime'>停车时长：
+            <text >0天2小时25分钟</text>
+          </view>
+          <view class='car-info-firsttime' wx:if="{{!first_pay}}">首次缴费：
+            <text class='car-info-ruchangdate'>2018-07-01</text>
+            <text>09:10:18</text>
+          </view>
+        </view>
+      </view>
+
+      <!-- 左右半圆 -->
+      <view class='circle-left'></view>
+      <view class='circle-right'></view>
+
+      <!-- 停车初始费用 -->
+      <view class='start-pay-info'>
+        <text class='start-pay-info-desc'>停车费</text>
+        <text class='start-pay-info-number'>¥{{pay_stop}}</text>
+      </view>
+
+      <block wx:if="{{first_pay}}">
+        <!-- 会员减免 -->
+        <block wx:if="{{member}}">
+          <view class='m-p-i'>
+            <view class='member-pay-info'>
+              <text class='member-pay-info-desc'>白银会员</text>
+              <text class='member-pay-info-number'>-¥{{pay_member}}</text>
+            </view>
+          </view>
+        </block>
+        <block  wx:else>
+        <view class='m-p-i'>
+            <view class='member-pay-info'>
+              <text class='member-pay-info-desc'>普通用户</text>
+              <text class='member-pay-info-number no-member'>暂无优惠</text>
+            </view>
+            </view>
+        </block>
+      
+        <!-- 优惠券 -->
+        <view class='m-p-i' bindtap='coupon'>
+          <view class='coupon-pay-info'>
+            <text class='coupon-pay-info-desc'>优惠券</text>
+            <view class="item2"> 
+              <text class='coupon-pay-info-number'>无可用优惠券</text>
+              <image  class="with_arrow" src="/images/right.png"></image>
+            </view>
+          </view>
+        </view>
+      </block>
+
+      <!-- 会员积分 -->    
+        <view class="memberjifen-pay-info {{showHeight?'m-height':''}}">
+        <block block wx:if="{{member}}">
+          <view class='memberjifen-pay-info-jian'>
+            <text class='memberjifen-pay-info-desc'>会员积分</text>
+            <text class='memberjifen-pay-info-number'>-¥{{pay_memberjifen_money}}
+            </text>
+          </view>
+          <view class='memberjifen-pay-info-fen'>
+            <text class='memberjifen-pay-info-fen-desc'>1825分</text>
+            <view class='memberjifen-pay-info-fen-saun'>
+              <text class='memberjifen-pay-number-jia' bindtap='bindPlus'>+</text>
+              <text class='memberjifen-pay-number'>{{pay_memberjifen}}</text>
+              <text class='memberjifen-pay-number-jian {{minusStatus}}' bindtap='bindMinus'>-</text>
+            </view>
+          </view>
+        </block>
+          <view class="search-prompt">
+            <text class="pay-desc" bindtap='tapRule'>缴费规则</text>
+            <image class='pay-img' src='/images/doubt.png' bindtap='tapRule'></image>
+          </view>
+        </view>
+      
+      <!-- 进行付款 -->
+      <view class='pay-info'>
+        <view class='pay-info-desc'>合计：
+          <text class='pay-info-number-biao'>¥</text>
+          <text class='pay-info-number'>{{pay_result}}</text>
+          <button class='pay'>立即支付</button>
+        </view >
+     
+      </view>
+    </view>
+    <!-- 温馨提示 -->
+    <view class='pay-tishi'>
+      <view class="pay-prompt" >
+        <text class="pay-prompt-desc pay-prompt-desc1">温馨提示</text>  
+        <text class="pay-prompt-desc pay-prompt-desc2">每次停车仅首次支付可享受支付优惠，再次支付时将无法再使用哦。
+        </text>
+      </view>
+    </view> 
+</view>
+
+<!-- 遮罩层搜索结果 -->
+<!--屏幕背景变暗的背景  -->
+  <view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+  <!--弹出框  -->
+  <view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}" >
+      <view class='coupon-title'>
+        <text>优惠券</text>
+        <image src='/images/pay/x.png' bindtap='close_coupon'></image>
+      </view>
+
+      <view class='coupon-info-zong'>
+        <view class='coupon-info' wx:for="{{ok_coupon}}">
+        <view class='coupon-info-desc'>
+          <text class='coupon-info-desc-name'>{{item.name}}</text>
+          <text class='coupon-info-desc-info'>{{item.desc}}</text>
+          <text class='coupon-info-desc-date'>{{item.date}}</text>
+        </view>
+        <view class='coupon-info-money'>
+          <view>¥<text>2</text>元</view>
+        </view>
+
+        <!--上下半圆  -->
+        <view class='coupon-left'></view>
+        <view class='coupon-right'></view>
+      </view>
+      </view>
+      
+  </view>
+ 

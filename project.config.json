@@ -1,0 +1,102 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.4",
+	"appid": "wx446fd0082cbb2607",
+	"projectname": "%E5%81%9C%E8%BD%A6%E5%9C%BA%E6%B5%8B%E8%AF%951",
+	"scripts": {},
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 4,
+			"list": [
+				{
+					"id": 0,
+					"name": "我的",
+					"pathName": "pages/w_my/w_my",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "绑定会员",
+					"pathName": "pages/w_my_bind_member/w_my_bind_member",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "绑定车牌",
+					"pathName": "pages/w_my_bind_platenumber/w_my_bind_platenumber",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "绑定车牌结果",
+					"pathName": "pages/w_my_bind_prompt/w_my_bind_prompt",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "支付界面",
+					"pathName": "pages/w_payment/w_payment",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的爱车",
+					"pathName": "pages/w_my_car/w_my_car",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "缴费历史",
+					"pathName": "pages/w_my_payment_record/w_my_payment_record",
+					"query": ""
+				},
+				{
+					"id": 7,
+					"name": "优惠券",
+					"pathName": "pages/w_my_park_coupon/w_my_park_coupon",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "缴费提示",
+					"pathName": "pages/w_payment_prompt/w_payment_prompt",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "加载失败提示",
+					"pathName": "pages/index_fail/index_fail",
+					"query": ""
+				}
+			]
+		}
+	}
+}

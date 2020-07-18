@@ -1,0 +1,28 @@
+<!--pages/bindprompt/bindprompt.wxml-->
+<view class='logo'>
+  <image class='img-logo' src='/images/logo.png'></image>
+</view>
+<view class='bind-info'>
+
+  <!--  表单  -->
+  <!-- <form bindsubmit="formSubmit" bindreset="formReset"> -->
+    <view class='bind-prompt'>
+      <image class='bind-prompt-img' src='/images/success.png'></image>
+      <text class='bind-prompt-desc'>绑定成功</text>
+    </view>
+    <view class="btn-area">
+      <button  class="btn-false" bindtap='tapindex'>确定</button>
+    </view>
+    <view class="bind-back">
+      <text bindtap='tapplatenumber'>继续绑定</text>
+    </view>
+  <!-- </form> -->
+</view>
+<view class='bind-tishi'>
+  <view class="search-prompt" >
+      <text class="prompt-desc prompt-desc1">温馨提示</text>  
+      <text class="prompt-desc prompt-desc2">每位会员可绑定多个车牌，绑定后的车牌均可享受会员优惠，最多可绑定5个。
+      </text>
+  </view>
+</view>
+

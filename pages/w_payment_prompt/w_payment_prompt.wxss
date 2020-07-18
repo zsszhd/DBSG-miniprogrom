@@ -1,0 +1,32 @@
+/* pages/w_payment_prompt/w_payment_prompt.wxss */
+
+/*绑定结果提示  */
+.bind-prompt{
+  display: block;
+  width: 670rpx;
+  font-size: 48rpx;
+  font-weight: 600;
+  margin: 150rpx 0 0rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bind-prompt-img{
+  width: 54rpx;
+  height: 54rpx;
+  margin-right: 40rpx;
+}
+
+/* 半小时提示 */
+.pay-warn{
+  width: 670rpx;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  margin-top: 40rpx;
+}
+.bind-prompt-desc1{
+  text-align: center;
+  font-size: 34rpx;
+  line-height: 60rpx;
+}

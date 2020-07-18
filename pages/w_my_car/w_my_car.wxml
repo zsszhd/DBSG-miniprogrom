@@ -1,0 +1,29 @@
+<!--pages/w_my_car/w_my_car.wxml-->
+<view wx:if='{{cars_number==""}}'>
+  <!-- 无车牌显示 -->
+  <text class="no-car-info">这里还没有车辆，点击立刻添加</text>
+</view>
+<view wx:else>
+  <!-- 有车牌显示 -->
+  <view class='list-car' wx:for="{{cars_number}}" bindlongtap="delate" data-vcid="{{item.vcid}}" bindtap='pay_judge' data-name="{{item.carnumber}}">
+    <view class='list-car-in'>
+      <view class='list-car-info' >
+        <text class='list-car-number'>{{item.carnumber}}</text>
+      </view>
+      <view class='list-pay'>
+        <text class='list-car-time'>绑定时间：{{item.opdate}}</text>
+      </view>
+    </view>
+    <image  class="with_arrow" src="/images/right2.png"></image>
+  </view>
+</view>
+<!-- 绑定车牌 -->
+<!-- 之前样式 -->
+ <!-- <view class='add-car-info' bindtap='addPlatenumber' wx:if="{{cars_number.length<5}}">
+  <image src='/images/add_car.png'></image>
+  <text>添加新车牌</text>
+</view> -->
+<!-- 修改后样子 -->
+ <view class='add-carinfo' bindtap='addPlatenumber' wx:if="{{cars_number.length<5}}">
+  <text>添加车辆</text>
+</view>

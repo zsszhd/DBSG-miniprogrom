@@ -1,0 +1,34 @@
+<!--pages/bindplatenumber/bindplatenumber.wxml-->
+<view class='logo'>
+  <image class='img-logo' src='/images/logo.png'></image>
+</view>
+<view class='bind-info'>
+  <!-- <view class="bind-title">  
+        <text class="line"></text>  
+        <text class="bind-title-desc">车牌绑定</text>  
+        <text class="line"></text>  
+  </view>   -->
+  <!--  表单  -->
+  <form bindsubmit="formSubmit" bindreset="formReset">
+
+      <view class="input-list">
+        <view class="input-item">
+          <keyboard bind:keyboardStatus="keyboard1StatusHandler"  id="keyboardComponent"></keyboard>
+        </view>
+      </view>
+
+    <view class="btn-area">
+      <button formType="submit"  class="btn-false">确认绑定</button>
+    </view>
+    <view class="bind-back">
+      <text  bindtap='tapindex'>暂不绑定</text>
+    </view>
+  </form>
+</view>
+<view class='bind-tishi'>
+  <view class="search-prompt" >
+      <text class="prompt-desc prompt-desc1">温馨提示</text>  
+      <text class="prompt-desc">请输入车牌号将车牌绑定到会员号，即可享受会员专属优惠。
+      </text>
+  </view>
+</view>

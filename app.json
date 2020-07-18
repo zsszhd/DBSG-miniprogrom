@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index_fail/index_fail",
+    "pages/logs/logs",
+    "pages/w_my/w_my",
+    "pages/w_index_rule/w_index_rule",
+    "pages/w_my_bind_platenumber/w_my_bind_platenumber",
+    "pages/w_my_bind_prompt/w_my_bind_prompt",
+    "pages/w_payment/w_payment",
+    "pages/w_payment_prompt/w_payment_prompt",
+    "pages/w_my_payment_record/w_my_payment_record",
+    "pages/w_my_car/w_my_car",
+    "pages/w_my_park_coupon/w_my_park_coupon",
+    "pages/w_my_bind_member/w_my_bind_member",
+    "pages/w_my_businessman_coupon/w_my_businessman_coupon"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3e3f42",
+    "navigationBarTitleText": "日照华润万象汇停车场",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "color": "white",
+    "backgroundColor": "#3e3f42",
+    "selectedColor": "#ffb900",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "订单缴费",
+        "iconPath": "images/ico_home.png",
+        "selectedIconPath": "images/ico_home1.png"
+      },
+      {
+        "pagePath": "pages/w_my/w_my",
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my1.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 15000
+  },
+  "sitemapLocation": "sitemap.json"
+}

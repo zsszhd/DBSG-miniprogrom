@@ -1,0 +1,107 @@
+/* pages/w_my_car/w_my_car.wxss */
+page{
+  background: #f2f4f6;
+}
+/* 无车牌时样式 */
+.no-car-info{
+  text-align: center;
+  display: block;
+  margin-top: 240rpx;
+  font-size: 34rpx;
+  color: #333;
+}
+
+
+/* 有车牌时样式 */
+.list-car{
+  width: 100%;
+  height: 192rpx;
+  box-sizing: border-box;
+  border-bottom: 4rpx solid #eaeaea;
+  padding: 38rpx 54rpx;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-between;
+}
+.list-car:first-child{
+  margin-top: 32rpx;
+}
+.list-car:last-child{
+  border-bottom: 0;
+}
+.list-car-in{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.list-car-info{
+  overflow: hidden;
+}
+.list-car-number{
+  float: left;
+  color:#282828;
+  font-weight: 700;
+  font-size: 38rpx;
+  letter-spacing:5rpx;
+}
+.list-car-time{
+  float: left;
+  color:#333;
+  font-size: 32rpx;
+}
+.list-pay{
+  text-align: center;
+  margin-top: 35rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.list-pay text{
+  font-size: 28rpx;
+  color: #909090;
+}
+.with_arrow {  
+  width: 60rpx;  
+  height: 60rpx;  
+}
+/* 添加车牌 */
+/* .add-car-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  flex-direction: column;
+  width: 200rpx;
+  margin: 0 auto;
+  margin-top: 100rpx;
+}
+.add-car-info image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.add-car-info text{
+  margin-top: 10rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #00aced;
+} */
+.add-carinfo{
+  position: absolute;
+  bottom: 62rpx;
+  left: 0;
+  right: 0;
+  width: 670rpx;
+  margin: 0 auto;
+  text-align: center;
+  background: #ffb900;
+  color: #000;
+  height: 90rpx;
+  border-radius: 40rpx;
+}
+
+.add-carinfo text{
+  text-align: center;
+  font-size: 36rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+}
