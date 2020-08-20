@@ -11,19 +11,19 @@ Page({
       payment:[{
         car_number:"苏E·05E67",          //车牌号
         car_money: "6.00",               //支付金额
-        payment_area: '日照停车场A2区域', //停车区域
+        payment_area: 'UAS智能车库A2区域', //停车区域
         pay_time: "2018-07-01 09:25:15",          //付款时间
         stop_time:"2小时25分钟11秒",      //停车时长
       }, {
         car_number: "苏E·05E67",          //车牌号
         car_money: "6.00",               //支付金额
-        payment_area: '日照停车场A2区域', //停车区域
+        payment_area: 'UAS智能车库A2区域', //停车区域
         pay_time: "2018-07-01 09:25:15",          //付款时间
         stop_time: "2小时25分钟11秒",      //停车时长
         }, {
           car_number: "苏E·05E67",          //车牌号
           car_money: "6.00",               //支付金额
-          payment_area: '日照停车场A2区域', //停车区域
+          payment_area: 'UAS智能车库A2区域', //停车区域
           pay_time: "2018-07-01 09:25:15",          //付款时间
           stop_time: "2小时25分钟11秒",      //停车时长
         },],//缴费信息

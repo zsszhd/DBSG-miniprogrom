@@ -25,7 +25,7 @@
   <block wx:else>
     <view class="park-info" bindtap='tapBindmember'>
       <view class="park-click">
-        <text class="click-text1" >欢迎使用停车缴费系统</text>
+        <text class="click-text1" >欢迎使用UAS智能车库管理系统</text>
         <view class='click-bind'>
           <text class="click-text2" >绑定会员尽享停车优惠</text>
           <image class='bind-img' src='/images/tap_right.png' bindtap='tapRule'></image>

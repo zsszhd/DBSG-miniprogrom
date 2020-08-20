@@ -32,7 +32,7 @@
           <text>有效期至{{item.date}}</text>
         </view>
         <view class='coupon-info-area'>
-          <text>仅限日照万象汇停车场使用</text>
+          <text>仅限UAS智能车库使用</text>
         </view>
         <!--左右半圆  -->
         <view class='coupon-left'></view>
@@ -57,7 +57,7 @@
           <text>有效期至{{item.date}}</text>
         </view>
         <view class='coupon-info-area'>
-          <text>仅限日照万象汇停车场使用</text>
+          <text>仅限UAS智能车库使用</text>
         </view>
         <!--左右半圆  -->
         <view class='coupon-left'></view>
@@ -82,7 +82,7 @@
           <text>有效期至{{item.date}}</text>
         </view>
         <view class='coupon-info-area'>
-          <text>仅限日照万象汇停车场使用</text>
+          <text>仅限UAS智能车库使用</text>
         </view>
         <!--左右半圆  -->
         <view class='coupon-left'></view>

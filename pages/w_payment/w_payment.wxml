@@ -9,7 +9,7 @@
       <!-- 车辆详情 -->
       <view class='car_info'>
         <!-- 停车区域 -->
-        <text class='car-info-area'>日照停车场A2区域</text>
+        <text class='car-info-area'>UAS智能车库A2区域</text>
         <!-- 车牌号和照片 -->
         <view class='car-info-np'>
           <text class='car-info-number'>{{title}}</text>
